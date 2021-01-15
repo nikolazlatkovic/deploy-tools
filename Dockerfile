@@ -1,5 +1,5 @@
-FROM ubuntu:latest
+FROM alpine:latest
 
 LABEL maintainer="Nikola Zlatkovic"
 
-RUN apt-get update && apt-get install openssh-client gettext-base rsync -y
+RUN apk add openssh-client gettext rsync
